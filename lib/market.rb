@@ -23,24 +23,13 @@ class Market
     end
   end
 
-  def total_inventory
-    total = {}
-    @vendors.each do |vendor|
-      # @vendor.each do |name, inventory|
-
-      require 'pry'; binding.pry
-      # end
-    end
-  end
-
   def sorted_item_list
     list = []
     @vendors.each do |vendor|
       vendor.inventory.each do |inventory, quantity|
-        # require 'pry'; binding.pry
       list << inventory.name
         end
       end
-      list.sort.uniq
+    list.sort.uniq
   end
 end
