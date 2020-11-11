@@ -32,4 +32,9 @@ class VendorTest < Minitest::Test
     @vendor.stock(@item1, 25)
     assert_equal 55, @vendor.check_stock(@item1)
   end
+
+  def test_potential_revenue
+
+    assert_equal 29.75, @vendor1.potential_revenue
+  end
 end
