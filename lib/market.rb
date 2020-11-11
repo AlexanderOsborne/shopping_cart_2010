@@ -22,4 +22,14 @@ class Market
       vendor.inventory.include?(item)
     end
   end
+
+  def total_inventory
+    total = {}
+    @vendors.each do |vendor|
+      # @vendor.each do |name, inventory|
+
+      require 'pry'; binding.pry
+      # end
+    end
+  end
 end
