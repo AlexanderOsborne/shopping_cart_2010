@@ -18,7 +18,6 @@ class Market
   end
 
   def vendors_that_sell(item)
-    # require 'pry'; binding.pry
     @vendors.select do |vendor|
       vendor.inventory.include?(item)
     end
