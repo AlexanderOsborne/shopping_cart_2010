@@ -32,4 +32,15 @@ class Market
       # end
     end
   end
+
+  def sorted_item_list
+    list = []
+    @vendors.each do |vendor|
+      vendor.inventory.each do |inventory, quantity|
+        # require 'pry'; binding.pry
+      list << inventory.name
+        end
+      end
+      list.sort.uniq
+  end
 end
